@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Desenrola Direito - Informação Jurídica Acessível</title>
+    <meta name="description" content="Blog jurídico com artigos, calculadoras e conteúdo educativo para ajudar você a entender e defender seus direitos de forma simples e acessível." />
+    <meta name="keywords" content="direito, advocacia, leis, consultoria jurídica, direitos do consumidor, direito trabalhista, direito penal, direito familiar" />
+    <meta name="author" content="Desenrola Direito" />
+    
+    <style>
+      :root {
+        --primary: #0056b3;
+        --primary-light: #4d8ecb;
+        --primary-dark: #003b7a;
+        --text: #333333;
+        --text-light: #666666;
+        --background: #f5f9ff;
+        --white: #ffffff;
+        --gray-light: #f0f0f0;
+        --gray: #cccccc;
+        --shadow: rgba(0, 0, 0, 0.1);
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text);
+        background-color: var(--background);
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      header {
+        background-color: var(--white);
+        box-shadow: 0 2px 10px var(--shadow);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+      }
+      
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--primary);
+        text-decoration: none;
+      }
+      
+      .nav-menu {
+        display: flex;
+        list-style: none;
+      }
+      
+      .nav-menu li {
+        margin-left: 25px;
+      }
+      
+      .nav-menu a {
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+      
+      .nav-menu a:hover {
+        color: var(--primary);
+      }
+      
+      .hero {
+        background-color: var(--primary);
+        color: var(--white);
+        padding: 60px 0;
+        text-align: center;
+      }
+      
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto 30px;
+      }
+      
+      .btn {
+        display: inline-block;
+        background-color: var(--white);
+        color: var(--primary);
+        padding: 12px 24px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s;
+      }
+      
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      
+      .main-content {
+        padding: 60px 0;
+      }
+      
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        color: var(--primary);
+        font-size: 2rem;
+      }
+      
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+      }
+      
+      .card {
+        background-color: var(--white);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px var(--shadow);
+        transition: transform 0.3s;
+      }
+      
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      
+      .card-image {
+        height: 200px;
+        background-color: var(--gray-light);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .card-image svg {
+        width: 80px;
+        height: 80px;
+        fill: var(--primary);
+      }
+      
+      .card-content {
+        padding: 20px;
+      }
+      
+      .card-title {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        color: var(--primary-dark);
+      }
+      
+      .card-text {
+        color: var(--text-light);
+        margin-bottom: 15px;
+      }
+      
+      .card-link {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+      }
+      
+      .card-link:hover {
+        text-decoration: underline;
+      }
+      
+      .contact-section {
+        background-color: var(--white);
+        padding: 60px 0;
+        text-align: center;
+      }
+      
+      .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+      
+      input, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--gray);
+        border-radius: 6px;
+        font-family: inherit;
+      }
+      
+      textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+      
+      button.btn {
+        border: none;
+        cursor: pointer;
+        background-color: var(--primary);
+        color: var(--white);
+      }
+      
+      footer {
+        background-color: var(--primary-dark);
+        color: var(--white);
+        padding: 40px 0;
+        text-align: center;
+      }
+      
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+      
+      .footer-links a {
+        color: var(--white);
+        margin: 0 15px;
+        text-decoration: none;
+      }
+      
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+      
+      .copyright {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+      
+      /* Estilo para mensagem de manutenção */
+      .maintenance {
+        text-align: center;
+        padding: 100px 20px;
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px var(--shadow);
+        max-width: 800px;
+        margin: 60px auto;
+      }
+      
+      .maintenance h1 {
+        font-size: 2.5rem;
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+      
+      .maintenance p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: var(--text);
+      }
+      
+      .maintenance-icon {
+        width: 120px;
+        height: 120px;
+        fill: var(--primary);
+        margin: 30px auto;
+      }
+      
+      /* Responsividade */
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          padding: 10px 0;
+        }
+        
+        .nav-menu {
+          margin-top: 15px;
+          justify-content: center;
+        }
+        
+        .nav-menu li {
+          margin: 0 10px;
+        }
+        
+        .hero h1 {
+          font-size: 2rem;
+        }
+        
+        .hero p {
+          font-size: 1rem;
+        }
+        
+        .cards-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="logo">Desenrola Direito</a>
+          <ul class="nav-menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Artigos</a></li>
+            <li><a href="#">Calculadoras</a></li>
+            <li><a href="#">Consulta</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container">
+      <div class="maintenance">
+        <h1>Estamos em Manutenção</h1>
+        <p>Estamos realizando melhorias no Desenrola Direito para lhe oferecer uma experiência ainda melhor.</p>
+        <svg class="maintenance-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+        </svg>
+        <p>Por favor, aguarde alguns instantes enquanto finalizamos os ajustes.</p>
+        <p>Agradecemos sua paciência e compreensão!</p>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="container">
+        <div class="footer-links">
+          <a href="#">Sobre</a>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Contato</a>
+        </div>
+        <p class="copyright">© 2025 Desenrola Direito. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
