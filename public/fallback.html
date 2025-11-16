@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenrola Direito | Problemas temporários</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+        .message {
+            background-color: #f0f8ff;
+            border: 1px solid #b8daff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .retry-button {
+            display: inline-block;
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .retry-button:hover {
+            background-color: #0052a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Desenrola Direito</h1>
+        <div class="message">
+            <h2>Estamos com problemas técnicos temporários</h2>
+            <p>Nosso site está passando por manutenção ou enfrentando dificuldades temporárias.</p>
+            <p>Por favor, tente novamente em alguns instantes.</p>
+            <a href="/" class="retry-button">Tentar novamente</a>
+        </div>
+        <div>
+            <p>Se o problema persistir, entre em contato conosco pelo e-mail: <strong>dr.regisilva@icloud.com</strong></p>
+        </div>
+    </div>
+    <script>
+        // Tentar recarregar a página após 30 segundos
+        setTimeout(() => {
+            window.location.reload();
+        }, 30000);
+    </script>
+</body>
+</html>

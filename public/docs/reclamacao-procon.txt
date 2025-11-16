@@ -1,0 +1,63 @@
+RECLAMAÇÃO AO PROCON
+
+Ao
+PROCON - [Cidade/Estado]
+[Endereço do PROCON]
+
+[Local e data]
+
+RECLAMANTE:
+Nome completo: [NOME DO CONSUMIDOR]
+Nacionalidade: [nacionalidade]
+Estado Civil: [estado civil]
+Profissão: [profissão]
+RG: [número do RG]
+CPF: [número do CPF]
+Endereço: [endereço completo]
+Telefone: [número de telefone]
+E-mail: [endereço de e-mail]
+
+RECLAMADA:
+Nome/Razão Social: [NOME DA EMPRESA]
+CNPJ: [número do CNPJ]
+Endereço: [endereço completo]
+Telefone: [número de telefone, se disponível]
+E-mail: [endereço de e-mail, se disponível]
+
+RELATO DOS FATOS:
+
+Eu, [NOME DO CONSUMIDOR], venho, por meio desta, apresentar RECLAMAÇÃO contra a empresa [NOME DA EMPRESA], pelos fatos e fundamentos a seguir expostos:
+
+[Descrever de forma detalhada e cronológica os fatos que motivaram a reclamação, incluindo:
+- Data da compra/contratação
+- Produto/serviço adquirido
+- Valor pago
+- Problema ocorrido
+- Tentativas prévias de solução junto à empresa
+- Protocolos de atendimento, se houver
+- Outras informações relevantes]
+
+Diante dos fatos narrados, e com base no Código de Defesa do Consumidor (Lei nº 8.078/90), notadamente nos artigos [citar os artigos aplicáveis ao caso, como 6º, 14, 18, 20, 35, 39, 42, etc.], solicito a intervenção deste órgão de proteção ao consumidor para:
+
+PEDIDOS:
+
+1. [Especificar o pedido principal, como: restituição do valor pago, troca do produto, cumprimento da oferta, etc.]
+2. [Outros pedidos, se houver]
+3. Aplicação das sanções administrativas cabíveis à empresa reclamada pela violação aos direitos do consumidor.
+
+DOCUMENTOS ANEXOS:
+
+1. Cópia do RG e CPF
+2. Nota fiscal/comprovante de compra
+3. Contrato de prestação de serviços (se aplicável)
+4. Comprovante de pagamento
+5. Registro das tentativas de contato com a empresa (e-mails, prints de conversas, protocolos)
+6. Outros documentos pertinentes: [especificar]
+
+Certo da atenção e providências desse respeitável órgão, coloco-me à disposição para quaisquer esclarecimentos adicionais que se façam necessários.
+
+Atenciosamente,
+
+________________________________
+[NOME DO CONSUMIDOR]
+CPF: [número do CPF]

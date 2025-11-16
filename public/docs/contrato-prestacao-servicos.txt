@@ -1,0 +1,77 @@
+CONTRATO DE PRESTAÇÃO DE SERVIÇOS
+
+Pelo presente instrumento particular, de um lado:
+
+[NOME COMPLETO DO CONTRATANTE], [nacionalidade], [estado civil], [profissão], portador(a) da Cédula de Identidade RG nº [número do RG], inscrito(a) no CPF/MF sob o nº [número do CPF], residente e domiciliado(a) na [endereço completo], doravante denominado(a) simplesmente CONTRATANTE;
+
+E, de outro lado:
+
+[NOME COMPLETO DO CONTRATADO/EMPRESA], [nacionalidade/tipo de sociedade], [estado civil, se pessoa física], [profissão, se pessoa física], portador(a) da Cédula de Identidade RG nº [número do RG, se pessoa física], inscrito(a) no CPF/MF sob o nº [número do CPF, se pessoa física] ou CNPJ/MF sob nº [número do CNPJ, se pessoa jurídica], residente e domiciliado(a) ou com sede na [endereço completo], doravante denominado(a) simplesmente CONTRATADO(A);
+
+Têm entre si, justo e contratado, o presente CONTRATO DE PRESTAÇÃO DE SERVIÇOS, que se regerá pelas seguintes cláusulas e condições:
+
+CLÁUSULA PRIMEIRA - DO OBJETO
+1.1. O presente contrato tem por objeto a prestação, pelo(a) CONTRATADO(A) ao(à) CONTRATANTE, dos seguintes serviços: [descrição detalhada dos serviços].
+1.2. Os serviços serão prestados nas dependências do(a) [CONTRATANTE ou CONTRATADO(A)], localizado(a) no endereço: [endereço completo onde os serviços serão prestados].
+
+CLÁUSULA SEGUNDA - DO PRAZO
+2.1. O presente contrato terá vigência de [período de vigência], com início em [data de início] e término em [data de término], podendo ser prorrogado mediante termo aditivo assinado por ambas as partes.
+2.2. Qualquer das partes poderá rescindir o presente contrato a qualquer tempo, desde que comunique sua intenção à outra parte por escrito, com antecedência mínima de [número de dias] dias.
+
+CLÁUSULA TERCEIRA - DO PREÇO E FORMA DE PAGAMENTO
+3.1. Pela prestação dos serviços objeto deste contrato, o(a) CONTRATANTE pagará ao(à) CONTRATADO(A) o valor total de R$ [valor em reais por extenso] ([valor em reais numérico]), a ser pago da seguinte forma: [descrever a forma de pagamento, se à vista, parcelado, etc.].
+3.2. O pagamento será efetuado mediante [forma de pagamento: depósito bancário, transferência, etc.] para a conta de titularidade do(a) CONTRATADO(A), conforme os seguintes dados bancários: Banco: [nome do banco], Agência: [número], Conta: [número da conta].
+3.3. Em caso de atraso no pagamento, incidirá multa de 2% (dois por cento) sobre o valor devido, juros moratórios de 1% (um por cento) ao mês e correção monetária pelo índice [nome do índice].
+
+CLÁUSULA QUARTA - DAS OBRIGAÇÕES DO(A) CONTRATADO(A)
+4.1. O(A) CONTRATADO(A) se obriga a:
+a) Executar os serviços com diligência e profissionalismo, observando as melhores práticas e técnicas aplicáveis;
+b) Cumprir os prazos estabelecidos para a execução dos serviços;
+c) Fornecer informações sobre o andamento dos serviços sempre que solicitado pelo(a) CONTRATANTE;
+d) Manter sigilo sobre todas as informações confidenciais do(a) CONTRATANTE a que tiver acesso durante a execução dos serviços;
+e) [incluir outras obrigações específicas conforme o serviço].
+
+CLÁUSULA QUINTA - DAS OBRIGAÇÕES DO(A) CONTRATANTE
+5.1. O(A) CONTRATANTE se obriga a:
+a) Fornecer ao(à) CONTRATADO(A) todas as informações e documentos necessários à execução dos serviços;
+b) Efetuar os pagamentos devidos nos prazos e condições estabelecidos neste contrato;
+c) Comunicar ao(à) CONTRATADO(A) qualquer irregularidade na execução dos serviços;
+d) [incluir outras obrigações específicas conforme o serviço].
+
+CLÁUSULA SEXTA - DA RESCISÃO
+6.1. O presente contrato poderá ser rescindido nas seguintes hipóteses:
+a) Por acordo entre as partes;
+b) Pelo descumprimento de quaisquer das obrigações estipuladas neste instrumento;
+c) Pela impossibilidade de execução do contrato, decorrente de motivo de força maior ou caso fortuito.
+6.2. Em caso de rescisão por culpa do(a) CONTRATADO(A), este(a) não fará jus ao recebimento de qualquer valor relativo aos serviços não executados ou executados de forma incompleta.
+6.3. Em caso de rescisão por culpa do(a) CONTRATANTE, este(a) deverá pagar ao(à) CONTRATADO(A) os valores relativos aos serviços já executados, além de multa de 10% (dez por cento) sobre o saldo remanescente do contrato.
+
+CLÁUSULA SÉTIMA - DAS DISPOSIÇÕES GERAIS
+7.1. O presente contrato é celebrado em caráter irrevogável e irretratável, obrigando as partes e seus sucessores a qualquer título.
+7.2. Qualquer alteração deste contrato somente terá validade se formalizada por escrito, mediante termo aditivo assinado pelas partes.
+7.3. Este contrato não estabelece qualquer vínculo empregatício entre o(a) CONTRATANTE e o(a) CONTRATADO(A) ou seus prepostos, sendo o(a) CONTRATADO(A) o(a) único(a) responsável pelo cumprimento de todas as obrigações trabalhistas, previdenciárias e fiscais relativas ao seu pessoal.
+7.4. As partes elegem o foro da Comarca de [nome da cidade], com renúncia expressa a qualquer outro, por mais privilegiado que seja, para dirimir quaisquer dúvidas ou controvérsias oriundas do presente contrato.
+
+E, por estarem justos e contratados, assinam o presente instrumento em 2 (duas) vias de igual teor e forma, na presença das testemunhas abaixo.
+
+[Local e data]
+
+________________________________
+[NOME DO CONTRATANTE]
+CONTRATANTE
+
+________________________________
+[NOME DO CONTRATADO]
+CONTRATADO(A)
+
+TESTEMUNHAS:
+
+1. ________________________________
+Nome:
+RG:
+CPF:
+
+2. ________________________________
+Nome:
+RG:
+CPF:
