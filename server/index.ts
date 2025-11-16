@@ -45,7 +45,8 @@ app.use((req, res, next) => {
   next();
 });
 
-(async () => {
+// Função para configurar o servidor (sem iniciar)
+const createServer = async () => {
   const server = await registerRoutes(app);
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
@@ -65,15 +66,23 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  // ALWAYS serve the app on port 5000
-  // this serves both the API and the client.
-  // It is the only port that is not firewalled.
-  const port = 5000;
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
+  return server;
+};
+
+// Se não estiver em produção, inicia o servidor imediatamente (para desenvolvimento)
+// Em produção, a Vercel vai chamar o app diretamente, então não iniciamos o servidor aqui.
+if (process.env.NODE_ENV !== 'production') {
+  createServer().then(server => {
+    const port = process.env.PORT || 5000;
+    server.listen({
+      port,
+      host: "0.0.0.0",
+      reusePort: true,
+    }, () => {
+      log(`serving on port ${port}`);
+    });
   });
-})();
+}
+
+// Exporta o app para a Vercel
+export default app;
