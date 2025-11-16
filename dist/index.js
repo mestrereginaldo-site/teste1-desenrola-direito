@@ -1,4 +1,42 @@
-// server/index.ts
+// Adicione estas linhas no início do arquivo (após os imports)
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+
+// Obter __dirname equivalente em ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Crie o app Express
+const app = express();
+
+// Servir arquivos estáticos (HTML, CSS, JS, imagens)
+app.use(express.static(path.join(__dirname, "public")));
+
+// Se estiver usando React/Vue com build, descomente esta linha:
+// app.use(express.static(path.join(__dirname, "dist")));
+
+// Suas rotas da API continuam aqui...
+app.get("/api/articles", async (req, res) => {
+  // sua lógica atual para artigos
+});
+
+app.get("/api/categories", async (req, res) => {
+  // sua lógica atual para categorias
+});
+
+// Rota catch-all para SPA (Single Page Application)
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+// Crie o servidor HTTP
+const httpServer = createServer(app);
+
+const PORT = process.env.PORT || 3000;
+httpServer.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});// server/index.ts
 import express2 from "express";
 
 // server/routes.ts
