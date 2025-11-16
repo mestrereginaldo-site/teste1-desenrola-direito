@@ -1,0 +1,58 @@
+## INSTRUÇÕES PARA CORRIGIR ERROS DE DEPLOY
+
+### 1. Editar o arquivo .replit (através da interface do Replit):
+
+```
+[ports]
+localPort = 5000
+externalPort = 80
+```
+
+### 2. Verificar o arquivo .replit.port (deve conter apenas):
+
+```
+5000
+```
+
+### 3. Para o deploy no Replit, use o server-deploy.js:
+
+```bash
+node server-deploy.js
+```
+
+### 4. Se os erros persistirem:
+
+- Pare todos os processos Node.js e reinicie:
+```bash
+pkill node && npm start
+```
+
+- Verifique se a porta 5000 está liberada:
+```bash
+lsof -i :5000
+```
+
+### 5. Modificações a considerar:
+
+- Não use server.Listen (com L maiúsculo) - use server.listen
+- Verifique se não há chamadas duplicadas para iniciar o servidor
+- Se precisar usar um proxy, certifique-se de que está configurado corretamente
+
+### 6. Logs de debug:
+
+Adicione mais logs para identificar onde o erro está acontecendo:
+
+```javascript
+console.log("Iniciando servidor...");
+// ... código de inicialização
+console.log("Servidor iniciado com sucesso!");
+```
+
+### 7. Configuração de package.json para deploy:
+
+Os scripts devem incluir:
+```json
+"scripts": {
+  "start": "NODE_ENV=production node server-deploy.js"
+}
+```

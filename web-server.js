@@ -1,0 +1,608 @@
+/**
+ * Servidor web simples que serve uma página HTML estática
+ * Ignora completamente o Vite e os componentes React
+ * Usado como solução temporária enquanto resolvemos problemas com o Vite
+ */
+
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
+
+// Porta que o Replit espera
+const PORT = 5000;
+
+// Criar o servidor Express
+const app = express();
+
+// Conteúdo HTML da página inicial
+const indexHtml = `
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenrola Direito - Blog Jurídico</title>
+  <style>
+    :root {
+      --primary: #0056b3;
+      --primary-light: #0078f4;
+      --primary-dark: #003d7a;
+      --background: #f5f9ff;
+      --text: #333;
+      --text-light: #666;
+      --white: #fff;
+      --border: #ddd;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --radius: 8px;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    header {
+      background-color: var(--white);
+      box-shadow: 0 2px 10px var(--shadow);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .nav-menu {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-menu li {
+      margin-left: 1.5rem;
+    }
+    
+    .nav-menu a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+      padding: 0.5rem;
+    }
+    
+    .nav-menu a:hover {
+      color: var(--primary);
+    }
+    
+    .hero {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 3rem 0;
+      margin-bottom: 2rem;
+    }
+    
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin-bottom: 2rem;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--white);
+      color: var(--primary);
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+      border: 2px solid var(--white);
+    }
+    
+    .btn:hover {
+      background-color: transparent;
+      color: var(--white);
+    }
+    
+    .articles {
+      margin: 3rem 0;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: var(--primary-dark);
+    }
+    
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .article-card {
+      background-color: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 3px 10px var(--shadow);
+      transition: transform 0.3s;
+    }
+    
+    .article-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .article-image {
+      width: 100%;
+      height: 200px;
+      background-color: var(--primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: bold;
+    }
+    
+    .article-content {
+      padding: 1.5rem;
+    }
+    
+    .article-category {
+      display: inline-block;
+      background-color: var(--primary-light);
+      color: var(--white);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+    
+    .article-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: var(--primary-dark);
+    }
+    
+    .article-excerpt {
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+    
+    .article-date {
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+    
+    .calculators {
+      background-color: var(--white);
+      padding: 3rem 0;
+      margin: 3rem 0;
+    }
+    
+    .calculators-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    
+    .calculator-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    
+    .calculator-card:hover {
+      box-shadow: 0 5px 15px var(--shadow);
+      border-color: var(--primary-light);
+    }
+    
+    .calculator-icon {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    
+    .calculator-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary-dark);
+    }
+    
+    .calculator-description {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+    
+    .contact-section {
+      background-color: var(--primary-dark);
+      color: var(--white);
+      padding: 3rem 0;
+      margin-top: auto;
+    }
+    
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .contact-info {
+      max-width: 400px;
+    }
+    
+    .contact-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    
+    .contact-info p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-form {
+      max-width: 500px;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 0.8rem;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius);
+      color: var(--white);
+      font-family: inherit;
+    }
+    
+    .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    
+    textarea.form-control {
+      min-height: 120px;
+      resize: vertical;
+    }
+    
+    .btn-submit {
+      background-color: var(--white);
+      color: var(--primary-dark);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: var(--radius);
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .btn-submit:hover {
+      background-color: var(--primary-light);
+      color: var(--white);
+    }
+    
+    footer {
+      background-color: var(--primary-dark);
+      color: var(--white);
+      padding: 2rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .footer-content {
+      text-align: center;
+    }
+    
+    .social-links {
+      margin-bottom: 1rem;
+    }
+    
+    .social-link {
+      display: inline-block;
+      margin: 0 0.5rem;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--white);
+      border-radius: 50%;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+    
+    .social-link:hover {
+      background-color: var(--white);
+      color: var(--primary-dark);
+    }
+    
+    .footer-links {
+      margin-bottom: 1rem;
+    }
+    
+    .footer-links a {
+      color: var(--white);
+      margin: 0 0.5rem;
+      text-decoration: none;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    
+    .footer-links a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+    
+    .copyright {
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+    
+    /* Responsividade para dispositivos móveis */
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+      }
+      
+      .nav-menu {
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: space-between;
+      }
+      
+      .nav-menu li {
+        margin: 0;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .contact-info, .contact-form {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">Desenrola Direito</a>
+        <ul class="nav-menu">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Artigos</a></li>
+          <li><a href="#">Calculadoras</a></li>
+          <li><a href="#">Consulta</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Simplifique o Direito no seu dia a dia</h1>
+        <p>Encontre respostas fáceis para problemas jurídicos complexos e aprenda a defender seus direitos de forma eficaz.</p>
+        <a href="#" class="btn">Consulta Jurídica</a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="articles">
+    <div class="container">
+      <h2 class="section-title">Artigos em Destaque</h2>
+      <div class="articles-grid">
+        <div class="article-card">
+          <div class="article-image">Imagem: Direito Trabalhista</div>
+          <div class="article-content">
+            <span class="article-category">Trabalhista</span>
+            <h3 class="article-title">Direitos básicos na demissão sem justa causa</h3>
+            <p class="article-excerpt">Entenda quais são os seus direitos quando é demitido sem justa causa e como calcular as verbas rescisórias.</p>
+            <p class="article-date">10 de Abril, 2025</p>
+          </div>
+        </div>
+        
+        <div class="article-card">
+          <div class="article-image">Imagem: Direito do Consumidor</div>
+          <div class="article-content">
+            <span class="article-category">Consumidor</span>
+            <h3 class="article-title">Como resolver problemas com compras online</h3>
+            <p class="article-excerpt">Guia prático para solucionar problemas com produtos defeituosos ou serviços não prestados em compras pela internet.</p>
+            <p class="article-date">25 de Março, 2025</p>
+          </div>
+        </div>
+        
+        <div class="article-card">
+          <div class="article-image">Imagem: Direito Civil</div>
+          <div class="article-content">
+            <span class="article-category">Civil</span>
+            <h3 class="article-title">Contrato de aluguel: o que verificar antes de assinar</h3>
+            <p class="article-excerpt">Dicas importantes para inquilinos e proprietários na hora de firmar um contrato de locação residencial.</p>
+            <p class="article-date">15 de Fevereiro, 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="calculadoras calculators">
+    <div class="container">
+      <h2 class="section-title">Calculadoras Jurídicas</h2>
+      <div class="calculators-grid">
+        <div class="calculator-card">
+          <div class="calculator-icon">🧮</div>
+          <h3 class="calculator-title">Rescisão Trabalhista</h3>
+          <p class="calculator-description">Calcule suas verbas rescisórias em caso de demissão.</p>
+          <a href="#" class="btn">Calcular</a>
+        </div>
+        
+        <div class="calculator-card">
+          <div class="calculator-icon">🚗</div>
+          <h3 class="calculator-title">Multas de Trânsito</h3>
+          <p class="calculator-description">Verifique valores e pontos na CNH para infrações.</p>
+          <a href="#" class="btn">Calcular</a>
+        </div>
+        
+        <div class="calculator-card">
+          <div class="calculator-icon">💰</div>
+          <h3 class="calculator-title">Pensão Alimentícia</h3>
+          <p class="calculator-description">Simulação de valores com base na renda.</p>
+          <a href="#" class="btn">Calcular</a>
+        </div>
+        
+        <div class="calculator-card">
+          <div class="calculator-icon">⚖️</div>
+          <h3 class="calculator-title">Indenização</h3>
+          <p class="calculator-description">Estime valores para danos morais e materiais.</p>
+          <a href="#" class="btn">Calcular</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Precisa de ajuda jurídica?</h2>
+          <p>Entre em contato conosco para receber orientação personalizada sobre seu caso ou dúvida jurídica.</p>
+          <p>Nossa equipe está pronta para ajudar você a encontrar a melhor solução de forma simples e descomplicada.</p>
+        </div>
+        
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" class="form-control" placeholder="Seu nome completo">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" class="form-control" placeholder="seu.email@exemplo.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <input type="text" id="subject" class="form-control" placeholder="Assunto da mensagem">
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" class="form-control" placeholder="Descreva sua dúvida ou problema jurídico"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="#" class="social-link">FB</a>
+          <a href="#" class="social-link">IG</a>
+          <a href="#" class="social-link">YT</a>
+          <a href="#" class="social-link">TW</a>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#">Sobre</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Contato</a>
+        </div>
+        
+        <p class="copyright">© 2025 Desenrola Direito. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+`;
+
+// Configurar middleware para servir arquivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Adicionar cabeçalhos CORS para permitir acesso de qualquer origem
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
+
+// Adicionar rota para a página inicial
+app.get('*', (req, res) => {
+  res.set('Content-Type', 'text/html');
+  res.send(indexHtml);
+});
+
+// Garantir o arquivo .replit.port com a porta correta
+fs.writeFileSync('.replit.port', PORT.toString());
+
+// Iniciar o servidor na porta 5000
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Servidor web simples rodando na porta ${PORT}`);
+  console.log(`Acesse: http://0.0.0.0:${PORT}`);
+});

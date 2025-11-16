@@ -1,0 +1,312 @@
+    // Direito de Família - Artigo sobre Divórcio
+    await this.createArticle({
+      title: "Divórcio no Brasil: Processos, custos e impactos jurídicos",
+      slug: "divorcio-processos-custos-impactos",
+      excerpt: "Um guia completo sobre o processo de divórcio no Brasil, incluindo tipos de divórcio, procedimentos, custos, divisão de bens e os impactos jurídicos na vida familiar.",
+      content: `
+# Divórcio no Brasil: Processos, custos e impactos jurídicos
+
+O divórcio é o processo legal que dissolve oficialmente o vínculo matrimonial, permitindo que os ex-cônjuges sigam caminhos separados, inclusive com a possibilidade de novos casamentos. No Brasil, desde a Emenda Constitucional nº 66/2010, o processo de divórcio foi significativamente simplificado, eliminando a exigência de separação judicial prévia. Este artigo apresenta informações completas sobre os tipos de divórcio, procedimentos, custos e impactos jurídicos para quem enfrenta esta situação.
+
+## Tipos de divórcio no Brasil
+
+### 1. Divórcio Consensual
+
+O divórcio consensual ocorre quando ambos os cônjuges concordam com o término do casamento e com todas as questões relacionadas, como:
+
+- Partilha de bens
+- Guarda dos filhos
+- Regime de visitas
+- Pensão alimentícia
+- Uso do nome de casado
+
+**Procedimentos disponíveis:**
+
+- **Divórcio em Cartório (Extrajudicial)**: Quando não há filhos menores ou incapazes, o divórcio pode ser realizado diretamente em cartório, através de escritura pública, com a assistência de um advogado ou defensor público.
+  
+- **Divórcio Judicial Consensual**: Necessário quando há filhos menores ou incapazes, mas ainda assim com acordo entre as partes sobre todas as questões.
+
+### 2. Divórcio Litigioso
+
+Quando não há acordo entre os cônjuges sobre o divórcio em si ou sobre questões relacionadas (como divisão de bens, guarda de filhos, pensão alimentícia), o processo tramita pela via judicial litigiosa.
+
+- É necessariamente judicial
+- Geralmente mais demorado (pode durar anos)
+- Mais custoso financeira e emocionalmente
+- Pode incluir perícias, avaliações e audiências múltiplas
+
+### 3. Divórcio Unilateral
+
+Com as mudanças trazidas pela EC 66/2010, tornou-se possível o divórcio a pedido de apenas um dos cônjuges, sem necessidade de justificativa ou concordância do outro. No entanto, questões como divisão de bens e guarda dos filhos ainda precisarão ser resolvidas no processo.
+
+## Procedimentos para cada tipo de divórcio
+
+### Divórcio Extrajudicial (em Cartório)
+
+**Requisitos:**
+- Consenso entre as partes
+- Ausência de filhos menores ou incapazes
+- Ambas as partes assistidas por advogado (pode ser o mesmo para o casal)
+
+**Documentos necessários:**
+- Certidão de casamento atualizada
+- Documentos pessoais (RG e CPF)
+- Documentos que comprovem a propriedade dos bens
+- Pacto antenupcial (se houver)
+- Procuração do advogado
+
+**Etapas:**
+1. Elaboração de minuta da escritura pelo advogado
+2. Agendamento no cartório
+3. Assinatura da escritura pública
+4. Registro da escritura no Cartório de Registro Civil
+
+**Prazo médio:** 15 a 30 dias
+
+### Divórcio Judicial Consensual
+
+**Requisitos:**
+- Acordo entre as partes
+- Pode haver filhos menores ou incapazes
+
+**Etapas:**
+1. Petição inicial elaborada pelo advogado
+2. Protocolo no fórum competente
+3. Análise pelo Ministério Público (quando há menores)
+4. Homologação pelo juiz
+5. Expedição do mandado de averbação
+
+**Prazo médio:** 2 a 6 meses
+
+### Divórcio Litigioso
+
+**Etapas:**
+1. Petição inicial
+2. Citação do cônjuge
+3. Contestação
+4. Audiência de conciliação
+5. Fase de produção de provas (se necessário)
+6. Alegações finais
+7. Sentença
+8. Eventuais recursos
+9. Averbação do divórcio
+
+**Prazo médio:** 1 a 3 anos (pode ser mais longo dependendo da complexidade e do volume de processos na comarca)
+
+<!-- ADSENSE -->
+<div class="adsense-container">
+  <p class="adsense-text">Publicidade</p>
+  <div class="adsense-placeholder">
+    <!-- Código Google AdSense será inserido aqui -->
+  </div>
+</div>
+<!-- FIM ADSENSE -->
+
+## Custos envolvidos no processo de divórcio
+
+### Divórcio em Cartório (Extrajudicial)
+
+- **Honorários advocatícios**: Entre R$ 2.000 e R$ 5.000 (valor pode variar conforme a complexidade)
+- **Custas cartorárias**: Entre R$ 500 e R$ 2.000 (varia conforme o estado e o valor do patrimônio)
+- **Averbação na certidão**: Aproximadamente R$ 150 a R$ 300
+
+### Divórcio Judicial Consensual
+
+- **Honorários advocatícios**: Entre R$ 3.000 e R$ 7.000
+- **Custas judiciais**: Entre R$ 200 e R$ 2.000 (varia conforme o estado e o valor da causa)
+- **Averbação na certidão**: Aproximadamente R$ 150 a R$ 300
+
+### Divórcio Litigioso
+
+- **Honorários advocatícios**: A partir de R$ 5.000, podendo chegar a dezenas de milhares de reais em casos complexos
+- **Custas judiciais**: Entre R$ 300 e R$ 5.000 (varia conforme o estado e o valor da causa)
+- **Custos com perícias**: Entre R$ 1.500 e R$ 10.000 (se necessário)
+- **Averbação na certidão**: Aproximadamente R$ 150 a R$ 300
+
+### Fatores que influenciam os custos:
+
+- **Complexidade patrimonial**: Quanto maior e mais complexo o patrimônio, maiores os custos
+- **Nível de litígio**: Quanto maior o conflito, mais custoso o processo
+- **Região geográfica**: Capitais e grandes centros costumam ter custos mais elevados
+- **Experiência do advogado**: Profissionais mais experientes geralmente cobram honorários mais altos
+
+## Regime de bens e sua influência no divórcio
+
+A partilha de bens no divórcio depende diretamente do regime de bens escolhido no momento do casamento:
+
+### Comunhão Parcial de Bens (regime legal padrão)
+
+- Bens adquiridos durante o casamento são divididos igualmente (50% para cada)
+- Bens anteriores ao casamento permanecem como propriedade exclusiva de cada cônjuge
+- Bens recebidos por herança ou doação individual não são compartilhados
+
+### Comunhão Universal de Bens
+
+- Todos os bens, inclusive os adquiridos antes do casamento, são divididos igualmente
+- Exceção: bens listados no art. 1.668 do Código Civil (como proventos do trabalho pessoal, pensões, etc.)
+
+### Separação Total de Bens
+
+- Cada cônjuge mantém a propriedade exclusiva de seus bens, não havendo partilha
+- Em casos especiais, a jurisprudência pode reconhecer direito à partilha de bens adquiridos pelo esforço comum (Súmula 377 do STF)
+
+### Participação Final nos Aquestos
+
+- Durante o casamento, funciona como separação de bens
+- No divórcio, há compensação dos bens adquiridos onerosamente durante o casamento
+
+### Separação Obrigatória de Bens
+
+- Imposta por lei em situações específicas (casamento de maiores de 70 anos, por exemplo)
+- Semelhante à separação convencional, porém obrigatória
+
+## Questões relacionadas a filhos
+
+### Guarda dos filhos
+
+A definição da guarda pode ser:
+
+- **Compartilhada**: Ambos os pais têm responsabilidades legais e rotina de convivência com os filhos (modelo preferencial pela lei)
+- **Unilateral**: Apenas um dos pais detém a guarda, com direito de visita ao outro
+
+O juiz leva em consideração o melhor interesse da criança, analisando:
+
+- Vínculo afetivo com os pais
+- Condições dos genitores
+- Opinião da criança (conforme sua idade e maturidade)
+- Laudo psicossocial (quando solicitado)
+
+### Pensão alimentícia
+
+A pensão é estabelecida com base no trinômio:
+
+- **Necessidade do alimentando** (filho)
+- **Possibilidade do alimentante** (genitor pagador)
+- **Proporcionalidade** entre necessidade e possibilidade
+
+O valor pode ser definido como:
+
+- Percentual do salário do alimentante (comum: 15% a 30% por filho)
+- Valor fixo com correção monetária
+- Combinação de ambos
+
+### Direito de visitas
+
+Quando não há guarda compartilhada, estabelece-se um regime de convivência, que pode ser:
+
+- Fins de semana alternados
+- Compartilhamento de férias escolares
+- Divisão de feriados e datas comemorativas
+- Visitas durante a semana
+- Arranjos flexíveis conforme acordo entre os pais
+
+## Questões específicas no divórcio
+
+### Uso do nome de casado
+
+Após o divórcio, cada cônjuge pode:
+
+- Voltar a usar o nome de solteiro
+- Manter o nome de casado
+
+O cônjuge não pode impor a alteração do nome do outro, sendo uma escolha pessoal.
+
+### Pensão alimentícia entre ex-cônjuges
+
+A pensão entre ex-cônjuges:
+
+- Não é automática
+- Tem caráter excepcional e temporário
+- Depende da comprovação de necessidade
+- Visa a recolocação profissional e readaptação financeira
+- Termina com novo casamento ou união estável do beneficiário
+
+### Planos de saúde e previdência
+
+- **Planos de saúde**: O ex-cônjuge pode manter-se como dependente apenas se previsto nas regras do plano e mediante pagamento integral da mensalidade
+- **Previdência privada**: Os valores acumulados durante o casamento podem ser objeto de partilha, dependendo do regime de bens
+- **Previdência social**: Possibilidade de pensão por morte mesmo após o divórcio, se comprovada dependência econômica
+
+## Impactos jurídicos do divórcio
+
+### Efeitos civis
+
+- Dissolução definitiva do vínculo matrimonial
+- Possibilidade de novo casamento
+- Modificação do estado civil
+- Cessação dos deveres conjugais
+- Fim do regime de bens
+
+### Efeitos patrimoniais
+
+- Partilha dos bens comuns
+- Divisão de dívidas contraídas durante o casamento
+- Pagamento de pensão alimentícia (se aplicável)
+- Destino do imóvel que servia de residência ao casal
+
+### Efeitos sucessórios
+
+- Ex-cônjuge perde a qualidade de herdeiro
+- Testamentos beneficiando o ex-cônjuge podem ser revisados
+- Seguros de vida com o ex-cônjuge como beneficiário permanecem válidos, salvo alteração
+
+## Alternativas ao processo tradicional de divórcio
+
+### Mediação familiar
+
+- Processo voluntário com mediador neutro
+- Foco em soluções consensuais
+- Ambiente menos hostil
+- Pode reduzir custos e tempo do processo
+- Menor impacto emocional para os envolvidos
+
+### Divórcio colaborativo
+
+- Modelo onde cada parte tem seu advogado
+- Compromisso conjunto de resolver sem litígio
+- Participação de outros profissionais (psicólogos, contadores)
+- Processos geralmente mais rápidos e menos traumáticos
+
+## Jurisprudência relevante sobre divórcio
+
+- **STF - RE 878.694/MG**: Equiparou união estável e casamento para fins sucessórios
+- **STJ - REsp 1.454.138/RJ**: Reconheceu a validade do testamento vital em casos de divórcio
+- **STJ - REsp 1.663.137/MG**: Estabeleceu a possibilidade de indenização por danos morais em casos de abandono afetivo
+- **STJ - REsp 1.454.138/RJ**: Firmou entendimento sobre a utilização da data da separação de fato como marco para o fim da comunhão de bens
+
+## Orientações práticas para quem vai se divorciar
+
+### Antes de iniciar o processo
+
+1. **Busque aconselhamento jurídico**: Consulte um advogado especializado antes de tomar qualquer decisão
+2. **Organize documentos**: Reúna documentos pessoais, certidões, comprovantes de propriedade
+3. **Levante o patrimônio**: Liste todos os bens e dívidas do casal
+4. **Planeje questões práticas**: Moradia, educação dos filhos, orçamento individual
+
+### Durante o processo
+
+1. **Mantenha comunicação civilizada**: Evite conflitos desnecessários
+2. **Priorize os filhos**: Não os envolva em disputas dos adultos
+3. **Seja transparente**: Não oculte bens ou informações
+4. **Documente tudo**: Mantenha registros de comunicações, acordos verbais, gastos com filhos
+
+### Após o divórcio
+
+1. **Cumpra os acordos**: Honre pensões, visitas e demais obrigações
+2. **Atualize documentos**: RG, CPF, cadastros bancários, planos de saúde
+3. **Revise testamentos e beneficiários**: Atualize documentos de sucessão e seguros
+4. **Mantenha a coparentalidade**: Continue cooperando na criação dos filhos
+
+## Considerações finais
+
+O divórcio, embora represente o fim do vínculo matrimonial, não encerra as responsabilidades parentais quando há filhos envolvidos. A forma como o processo é conduzido pode ter impacto significativo na saúde emocional de todos os envolvidos, especialmente dos filhos.
+
+A escolha da modalidade de divórcio mais adequada deve considerar não apenas aspectos financeiros, mas também emocionais e práticos. Quando possível, optar por soluções consensuais costuma trazer benefícios a longo prazo para toda a família.
+
+A assistência jurídica adequada é fundamental para garantir que direitos sejam preservados e que o processo ocorra da forma mais tranquila possível, permitindo que todos os envolvidos possam seguir adiante com suas vidas após esta importante transição.
+      `,
+      imageUrl: "https://images.unsplash.com/photo-1585908286456-991b5d0e52cc?auto=format&fit=crop&w=800&q=80",
+      publishDate: new Date("2025-03-15"),
+      categoryId: familyCategory.id,
+      featured: 0
+    });
