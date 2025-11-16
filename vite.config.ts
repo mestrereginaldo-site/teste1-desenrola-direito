@@ -8,15 +8,7 @@ const __dirname = dirname(__filename);
 
 export default defineConfig({
   plugins: [
-    react(),
-    runtimeErrorOverlay(),
-    themePlugin(),
-    ...(process.env.NODE_ENV !== "production" &&
-      ? [
-            m.cartographer(),
-          ),
-        ]
-      : []),
+    react()
   ],
   resolve: {
     alias: {
