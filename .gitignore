@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Editor de texto
+.vscode/
+.idea/
+
+# Arquivos temporários e de compilação
+.DS_Store
+*.log
+*.tmp
+*.swp
+*.swo
+*.swn
+*.bak
+*.cache
+*.class
+*.jar
+*.pyc
+*.pyo
+*.pyd
+
+# Build do Vite
+dist/
+build/
+.vite/
+
+# Banco de dados
+*.db
