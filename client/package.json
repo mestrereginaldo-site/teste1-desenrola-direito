@@ -1,0 +1,22 @@
+{
+  "name": "desenrola-direito-client",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "wouter": "^3.3.5"
+    // Adicione aqui TODAS as dependências do frontend do seu package.json principal
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.2",
+    "typescript": "5.6.3",
+    "vite": "^5.4.14"
+  }
+}
