@@ -20,7 +20,7 @@ export default defineConfig({
     outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
     rollupOptions: {
-      external: ['react-icons/fa']
+      external: ['@hookform/resolvers/zod']
     }
   },
   server: {
